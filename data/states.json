@@ -1,0 +1,3038 @@
+{
+  "meta": {
+    "source": "https://valgkort-usa-2026-michel.danske-a-kas-7580.chatgpt.site",
+    "snapshotDate": "2026-10-31",
+    "compiledDate": "2026-11-01",
+    "description": "Rekonstrueret fra den offentligt viste version. Ikke original ChatGPT Sites-kildekode. Ingen løbende valgresultater.",
+    "populationYear": 2025,
+    "incomeBase": "ACS 2020-2024, dollars i 2024-priser"
+  },
+  "states": {
+    "KY": {
+      "code": "KY",
+      "name": "Kentucky",
+      "houseSeats": 6,
+      "population": "4.606.864",
+      "admissionYear": "1792",
+      "admissionOrder": "15",
+      "metrics": {
+        "foreignBorn": "4,7",
+        "hispanic": "5,0",
+        "age65plus": "17,3",
+        "bachelor": "27,6",
+        "medianHouseholdIncome": "63726"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Mitch McConnell",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Charles Booker Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Andy Barr Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Christopher Campbell Kentucky Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kentucky Secretary of State, general election candidates ↗",
+            "url": "https://web.sos.ky.gov/candidatefilings/default.aspx?id=3"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "CA": {
+      "code": "CA",
+      "name": "California",
+      "houseSeats": 52,
+      "population": "39.355.309",
+      "admissionYear": "1850",
+      "admissionOrder": "31",
+      "metrics": {
+        "foreignBorn": "27,0",
+        "hispanic": "40,2",
+        "age65plus": "15,7",
+        "bachelor": "37,1",
+        "medianHouseholdIncome": "99122"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Gavin Newsom",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Xavier Becerra Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Steve Hilton Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Sacramento County, kvalificerede kandidater til valget ↗",
+            "url": "https://elections.saccounty.gov/us/en/campaign-services/candidate-report.html"
+          }
+        ]
+      }
+    },
+    "AL": {
+      "code": "AL",
+      "name": "Alabama",
+      "houseSeats": 7,
+      "population": "5.193.088",
+      "admissionYear": "1819",
+      "admissionOrder": "22",
+      "metrics": {
+        "foreignBorn": "4,0",
+        "hispanic": "5,6",
+        "age65plus": "17,8",
+        "bachelor": "28,4",
+        "medianHouseholdIncome": "63999"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Tommy Tuberville",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Everett Wess Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Barry Moore Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Alabama Secretary of State, officiel prøvestemmeseddel ↗",
+            "url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Autauga-Sample.pdf"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Kay Ivey",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Doug Jones Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Tommy Tuberville Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Alabama Secretary of State, officiel prøvestemmeseddel ↗",
+            "url": "https://www.sos.alabama.gov/sites/default/files/sample-ballots/2026/gen/Autauga-Sample.pdf"
+          }
+        ]
+      }
+    },
+    "IN": {
+      "code": "IN",
+      "name": "Indiana",
+      "houseSeats": 9,
+      "population": "6.973.333",
+      "admissionYear": "1816",
+      "admissionOrder": "19",
+      "metrics": {
+        "foreignBorn": "6,3",
+        "hispanic": "8,6",
+        "age65plus": "16,8",
+        "bachelor": "29,5",
+        "medianHouseholdIncome": "71957"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "CO": {
+      "code": "CO",
+      "name": "Colorado",
+      "houseSeats": 8,
+      "population": "6.012.561",
+      "admissionYear": "1876",
+      "admissionOrder": "38",
+      "metrics": {
+        "foreignBorn": "9,8",
+        "hispanic": "22,5",
+        "age65plus": "15,6",
+        "bachelor": "45,7",
+        "medianHouseholdIncome": "95470"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "John Hickenlooper",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "John Hickenlooper Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Mark Baisley Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Bob Chew Forward Party"
+          },
+          {
+            "tag": "A",
+            "label": "Christopher Baum Approval Voting Party"
+          },
+          {
+            "tag": "A",
+            "label": "Blake Huber Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Adam Withrow Unity Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Boulder County Elections, kandidater på stemmesedlen ↗",
+            "url": "https://bouldercounty.gov/elections/information/2026-general-election-candidates-and-ballot-measures/"
+          },
+          {
+            "text": "Ballotpedia, samlet kandidatoversigt med partier ↗",
+            "url": "https://ballotpedia.org/United_States_Senate_elections,_2026"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Jared Polis",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Phil Weiser Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Victor Marx Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Stephen T. Hamilton American Constitution Party"
+          },
+          {
+            "tag": "A",
+            "label": "Eric Mulder Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Jeff Peckman Unity Party"
+          },
+          {
+            "tag": "A",
+            "label": "Erik Underwood Approval Voting Party"
+          },
+          {
+            "tag": "U",
+            "label": "Greg Lopez Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Boulder County, kandidater og ballot measures 2026 ↗",
+            "url": "https://bouldercounty.gov/elections/information/2026-general-election-candidates-and-ballot-measures/"
+          },
+          {
+            "text": "Ballotpedia, guvernørvalget i Colorado ↗",
+            "url": "https://ballotpedia.org/Colorado_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "DE": {
+      "code": "DE",
+      "name": "Delaware",
+      "houseSeats": 1,
+      "population": "1.059.952",
+      "admissionYear": "1787",
+      "admissionOrder": "1",
+      "metrics": {
+        "foreignBorn": "10,7",
+        "hispanic": "11,0",
+        "age65plus": "20,6",
+        "bachelor": "35,8",
+        "medianHouseholdIncome": "84954"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Chris Coons",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Chris Coons Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Michael \"Dr. Mike\" Katz Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Delaware Department of Elections, prøvestemmeseddel ↗",
+            "url": "https://elections.delaware.gov/elections/general/sampleballots/GE2026/09-07.html"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "GA": {
+      "code": "GA",
+      "name": "Georgia",
+      "houseSeats": 14,
+      "population": "11.302.748",
+      "admissionYear": "1788",
+      "admissionOrder": "4",
+      "metrics": {
+        "foreignBorn": "11,2",
+        "hispanic": "11,0",
+        "age65plus": "15,0",
+        "bachelor": "34,9",
+        "medianHouseholdIncome": "77353"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Jon Ossoff",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jon Ossoff Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Mike Collins Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Georgia, officiel prøvestemmeseddel ↗",
+            "url": "https://app.enhancedvoting.com/ebd/voter/Georgia/sampleballots/jurisdiction/2fa1ec9c-3b40-4423-9dbe-3967321ee822/election/01000000-719b-cf59-dfd1-08df151dcdac/precinct/0ee4a379-f499-4b1a-a87d-da85ece464bf/ballotStyle/01000000-758e-0fe0-7a24-08df151dcf6c"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Brian Kemp",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Keisha Lance Bottoms Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Rick Jackson Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, statewide executive elections i Georgia ↗",
+            "url": "https://ballotpedia.org/Georgia_state_executive_official_elections,_2026"
+          },
+          {
+            "text": "WABE, Libertarian Party afslutter forsøg på ballot access ↗",
+            "url": "https://www.wabe.org/georgia-libertarians-end-efforts-to-get-on-2026-general-election-ballot/"
+          }
+        ]
+      }
+    },
+    "FL": {
+      "code": "FL",
+      "name": "Florida",
+      "houseSeats": 28,
+      "population": "23.462.518",
+      "admissionYear": "1845",
+      "admissionOrder": "27",
+      "metrics": {
+        "foreignBorn": "21,9",
+        "hispanic": "27,4",
+        "age65plus": "21,3",
+        "bachelor": "34,1",
+        "medianHouseholdIncome": "74568"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Særvalg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Ashley Moody",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Angie Nixon Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Ashley Moody Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Neil J. Gillespie Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Florida Division of Elections, kandidatliste ↗",
+            "url": "https://dos.elections.myflorida.com/candidates/CanList.asp?OfficeCode=USS&elecid=20261103-GEN"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Ron DeSantis",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "David Jolly Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Byron Donalds Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Scott Eckhard Jewett Libertarian Party of Florida"
+          },
+          {
+            "tag": "U",
+            "label": "Charles Burkett Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Frank J. Russo Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Moliere \"Moe\" Dimanche Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Dean Ocean Abrams Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Jeffrey Peter \"Dr. Jeff\" Datto Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Florida Division of Elections, general election candidate list ↗",
+            "url": "https://dos.elections.myflorida.com/candidates/CanList.asp?OfficeCode=GOV&elecid=20261103-GEN"
+          },
+          {
+            "text": "Florida Election Watch, guvernørvalgets kandidatfelt ↗",
+            "url": "https://floridaelectionwatch.gov/StateOffices/Governor"
+          }
+        ]
+      }
+    },
+    "IL": {
+      "code": "IL",
+      "name": "Illinois",
+      "houseSeats": 17,
+      "population": "12.719.141",
+      "admissionYear": "1818",
+      "admissionOrder": "21",
+      "metrics": {
+        "foreignBorn": "14,7",
+        "hispanic": "18,8",
+        "age65plus": "17,0",
+        "bachelor": "37,8",
+        "medianHouseholdIncome": "83390"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Dick Durbin",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Juliana Stratton Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Don Tracy Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Whitfield Harrington Jr. American Center Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Illinois State Board of Elections, certificeret kandidatliste ↗",
+            "url": "https://www.elections.il.gov/ElectionOperations/CandidateList.aspx?ElectionID=sejIrI%2BQmww%3D&OfficeID=b3l9OOoBLkjHeNv3Pz40NQ%3D%3D&QueryType=xF443FTCAJbIL3atac%2FUjEg7Y4yklgT1&Status=P2wRQXkiFoo%3D"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "JB Pritzker",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "JB Pritzker Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Darren Bailey Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Collin Corbett Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Illinois State Board of Elections, general election candidate list ↗",
+            "url": "https://www.elections.il.gov/ElectionOperations/CandidateList.aspx?ElectionID=sejIrI%2BQmww%3D&OfficeID=%2FIn13iuXmuD56WVRMXU%2FKg%3D%3D&QueryType=xF443FTCAJbIL3atac%2FUjEg7Y4yklgT1&Status=P2wRQXkiFoo%3D"
+          },
+          {
+            "text": "Cook County Clerk, guvernørvalgets kandidatfelt ↗",
+            "url": "https://cookresults.azurewebsites.net/"
+          }
+        ]
+      }
+    },
+    "IA": {
+      "code": "IA",
+      "name": "Iowa",
+      "houseSeats": 4,
+      "population": "3.238.387",
+      "admissionYear": "1846",
+      "admissionOrder": "29",
+      "metrics": {
+        "foreignBorn": "5,9",
+        "hispanic": "7,3",
+        "age65plus": "18,1",
+        "bachelor": "31,4",
+        "medianHouseholdIncome": "75059"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Joni Ernst",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Josh Turek Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Ashley Hinson Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Thomas Laehn Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Iowa County, kandidater ved valget 3. november ↗",
+            "url": "https://iowacounty.iowa.gov/elections/2026_general_election_2026_11_03/"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Kim Reynolds",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Rob Sand Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Zach Lahn Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Iowa County, general election 3. november 2026 ↗",
+            "url": "https://iowacounty.iowa.gov/elections/2026_general_election_2026_11_03/"
+          },
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalg, herunder tilbagetrukne kandidater ↗",
+            "url": "https://ballotpedia.org/Iowa_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "AZ": {
+      "code": "AZ",
+      "name": "Arizona",
+      "houseSeats": 9,
+      "population": "7.623.818",
+      "admissionYear": "1912",
+      "admissionOrder": "48",
+      "metrics": {
+        "foreignBorn": "13,0",
+        "hispanic": "31,4",
+        "age65plus": "18,9",
+        "bachelor": "33,3",
+        "medianHouseholdIncome": "79964"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Katie Hobbs",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Katie Hobbs Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Andy Biggs Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Risa Lombardo Green Party"
+          },
+          {
+            "tag": "A",
+            "label": "Teri Hourihan No Labels Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalg i Arizona ↗",
+            "url": "https://ballotpedia.org/Arizona_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          },
+          {
+            "text": "FOX 10 Phoenix, guide til delstatsvalg, opdateret 30. oktober 2026 ↗",
+            "url": "https://www.fox10phoenix.com/election/2026-election-guide-candidates-running-governor-other-statewide-offices"
+          }
+        ]
+      }
+    },
+    "HI": {
+      "code": "HI",
+      "name": "Hawaii",
+      "houseSeats": 2,
+      "population": "1.432.820",
+      "admissionYear": "1959",
+      "admissionOrder": "50",
+      "metrics": {
+        "foreignBorn": "17,9",
+        "hispanic": "9,9",
+        "age65plus": "20,5",
+        "bachelor": "36,1",
+        "medianHouseholdIncome": "100389"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Josh Green",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Josh Green Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Gary Cordery Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i Hawaii ↗",
+            "url": "https://ballotpedia.org/Hawaii_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "CT": {
+      "code": "CT",
+      "name": "Connecticut",
+      "houseSeats": 5,
+      "population": "3.688.496",
+      "admissionYear": "1788",
+      "admissionOrder": "5",
+      "metrics": {
+        "foreignBorn": "15,7",
+        "hispanic": "18,3",
+        "age65plus": "18,5",
+        "bachelor": "42,5",
+        "medianHouseholdIncome": "95781"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Ned Lamont",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Ned Lamont Demokraterne / Working Families Party"
+          },
+          {
+            "tag": "R",
+            "label": "Ryan Fazio Republikanerne / Independent Party of Connecticut"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i Connecticut ↗",
+            "url": "https://ballotpedia.org/Connecticut_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          },
+          {
+            "text": "Ballotpedia, Connecticut elections 2026, herunder write-in-status ↗",
+            "url": "https://ballotpedia.org/Connecticut_elections,_2026"
+          }
+        ]
+      }
+    },
+    "ID": {
+      "code": "ID",
+      "name": "Idaho",
+      "houseSeats": 2,
+      "population": "2.029.733",
+      "admissionYear": "1890",
+      "admissionOrder": "43",
+      "metrics": {
+        "foreignBorn": "5,9",
+        "hispanic": "13,6",
+        "age65plus": "17,0",
+        "bachelor": "31,8",
+        "medianHouseholdIncome": "77800"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Jim Risch",
+        "candidates": [
+          {
+            "tag": "R",
+            "label": "Jim Risch Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Todd Achilles Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Natalie M. Fleming Uafhængig"
+          },
+          {
+            "tag": "A",
+            "label": "Matt Loesby Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, Idaho 2026 ↗",
+            "url": "https://ballotpedia.org/United_States_Senate_election_in_Idaho,_2026"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Brad Little",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Terri Pickens Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Brad Little Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Pro-Life Constitution Party"
+          },
+          {
+            "tag": "A",
+            "label": "Paul Sand Libertarian Party"
+          },
+          {
+            "tag": "U",
+            "label": "John R. Stegner Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, statewide executive elections i Idaho ↗",
+            "url": "https://ballotpedia.org/Idaho_state_executive_official_elections,_2026"
+          },
+          {
+            "text": "VoteClock, kandidater på stemmesedlen i Idaho ↗",
+            "url": "https://voteclock.org/idaho-candidates-on-the-ballot-2026"
+          }
+        ]
+      }
+    },
+    "LA": {
+      "code": "LA",
+      "name": "Louisiana",
+      "houseSeats": 6,
+      "population": "4.618.189",
+      "admissionYear": "1812",
+      "admissionOrder": "18",
+      "metrics": {
+        "foreignBorn": "4,9",
+        "hispanic": "7,2",
+        "age65plus": "16,7",
+        "bachelor": "27,0",
+        "medianHouseholdIncome": "60756"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Bill Cassidy",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jamie Davis Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Julia Letlow Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Louisiana Secretary of State, kandidater 3. november ↗",
+            "url": "https://voterportal.sos.la.gov/CandidateInquiry/ParishCandidate/Print?electionDate=11%2F03%2F2026&electionId=344&parishId=34&parishName=MADISON"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "AK": {
+      "code": "AK",
+      "name": "Alaska",
+      "houseSeats": 1,
+      "population": "737.270",
+      "admissionYear": "1959",
+      "admissionOrder": "49",
+      "metrics": {
+        "foreignBorn": "7,7",
+        "hispanic": "7,3",
+        "age65plus": "13,8",
+        "bachelor": "31,7",
+        "medianHouseholdIncome": "92788"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Dan Sullivan",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Mary Peltola Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Dan S. Sullivan Republikanerne"
+          },
+          {
+            "tag": "R",
+            "label": "Gerald L. Heikes Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Daniel J. Sullivan Jr. Undeclared (uden angivet parti)"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Alaska Division of Elections, certificerede kandidater ↗",
+            "url": "https://www.elections.alaska.gov/candidates/?election=26GENR"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Mike Dunleavy",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jonathan Kreiss-Tomkins Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Dave Bronson Republikanerne"
+          },
+          {
+            "tag": "R",
+            "label": "Treg Taylor Republikanerne"
+          },
+          {
+            "tag": "R",
+            "label": "Bernadette Wilson Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Alaska Division of Elections, certificerede kandidater til general election ↗",
+            "url": "https://www.elections.alaska.gov/candidates/?election=26GENR"
+          },
+          {
+            "text": "National Governors Association, guvernørvalg 2026 ↗",
+            "url": "https://www.nga.org/governors/elections/"
+          }
+        ]
+      }
+    },
+    "KS": {
+      "code": "KS",
+      "name": "Kansas",
+      "houseSeats": 4,
+      "population": "2.977.220",
+      "admissionYear": "1861",
+      "admissionOrder": "34",
+      "metrics": {
+        "foreignBorn": "7,4",
+        "hispanic": "13,6",
+        "age65plus": "17,0",
+        "bachelor": "35,6",
+        "medianHouseholdIncome": "74275"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Roger Marshall",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Adam Hamilton Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Roger Marshall Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "David C. Graham Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kiowa County, officiel valgmeddelelse ↗",
+            "url": "https://www.kiowacountyks.gov/210/Election-Notices"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Laura Kelly",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Cindy Holscher Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Ty Masterson Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kiowa County, officielle valgmeddelelser ↗",
+            "url": "https://www.kiowacountyks.gov/210/Election-Notices"
+          },
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalg, herunder write-in-status ↗",
+            "url": "https://ballotpedia.org/Kansas_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "AR": {
+      "code": "AR",
+      "name": "Arkansas",
+      "houseSeats": 4,
+      "population": "3.114.791",
+      "admissionYear": "1836",
+      "admissionOrder": "25",
+      "metrics": {
+        "foreignBorn": "5,4",
+        "hispanic": "9,0",
+        "age65plus": "17,6",
+        "bachelor": "25,7",
+        "medianHouseholdIncome": "60773"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Tom Cotton",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Hallie Shoffner Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Tom Cotton Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Jeff Wadlin Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "AR Votes, føderale valg ↗",
+            "url": "https://www.arvotes.org/federal-elections"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Sarah Huckabee Sanders",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Fred Love Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Sarah Huckabee Sanders Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Colt Shelby Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "ARVotes, statewide executive candidates ↗",
+            "url": "https://www.arvotes.org/stateexecutive"
+          },
+          {
+            "text": "VoteClock, kandidater på stemmesedlen i Arkansas ↗",
+            "url": "https://voteclock.org/arkansas-candidates-on-the-ballot-2026"
+          }
+        ]
+      }
+    },
+    "MS": {
+      "code": "MS",
+      "name": "Mississippi",
+      "houseSeats": 4,
+      "population": "2.954.160",
+      "admissionYear": "1817",
+      "admissionOrder": "20",
+      "metrics": {
+        "foreignBorn": "2,4",
+        "hispanic": "3,7",
+        "age65plus": "17,2",
+        "bachelor": "25,1",
+        "medianHouseholdIncome": "56447"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Cindy Hyde-Smith",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Scott Colom Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Cindy Hyde-Smith Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Ty Pinkins Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Mississippi Secretary of State, kvalificerede kandidater ↗",
+            "url": "https://www.sos.ms.gov/content/CandidateQualifying/default.aspx"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "ND": {
+      "code": "ND",
+      "name": "North Dakota",
+      "houseSeats": 1,
+      "population": "799.358",
+      "admissionYear": "1889",
+      "admissionOrder": "39",
+      "metrics": {
+        "foreignBorn": "4,7",
+        "hispanic": "4,7",
+        "age65plus": "16,5",
+        "bachelor": "32,7",
+        "medianHouseholdIncome": "76657"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "MT": {
+      "code": "MT",
+      "name": "Montana",
+      "houseSeats": 2,
+      "population": "1.144.694",
+      "admissionYear": "1889",
+      "admissionOrder": "41",
+      "metrics": {
+        "foreignBorn": "2,3",
+        "hispanic": "4,6",
+        "age65plus": "20,1",
+        "bachelor": "35,2",
+        "medianHouseholdIncome": "72509"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Steve Daines",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Alani Bankhead Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Kurt Alme Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Kyle Austin Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Montana Secretary of State, Federal General 2026 ↗",
+            "url": "https://candidatefiling.mt.gov/candidatefiling/CandidateList.aspx?e=450002987"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "NY": {
+      "code": "NY",
+      "name": "New York",
+      "houseSeats": 26,
+      "population": "20.002.427",
+      "admissionYear": "1788",
+      "admissionOrder": "11",
+      "metrics": {
+        "foreignBorn": "22,8",
+        "hispanic": "19,8",
+        "age65plus": "17,9",
+        "bachelor": "40,2",
+        "medianHouseholdIncome": "85974"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Kathy Hochul",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Kathy Hochul Demokraterne / Working Families Party"
+          },
+          {
+            "tag": "R",
+            "label": "Bruce Blakeman Republikanerne / Conservative / Vote Affordable"
+          }
+        ],
+        "sources": [
+          {
+            "text": "NYC Votes, officiel vælgerguide til guvernørvalget ↗",
+            "url": "https://www.nycvotes.org/whats-on-the-ballot/2026-general-election-voter-guide/governor/?boroughCode=+&districtID=&geoAreaAbbr=&officeType=9&officelevel=2&pg=r"
+          },
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i New York ↗",
+            "url": "https://ballotpedia.org/New_York_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "OH": {
+      "code": "OH",
+      "name": "Ohio",
+      "houseSeats": 15,
+      "population": "11.900.510",
+      "admissionYear": "1803",
+      "admissionOrder": "17",
+      "metrics": {
+        "foreignBorn": "5,2",
+        "hispanic": "4,8",
+        "age65plus": "18,3",
+        "bachelor": "31,5",
+        "medianHouseholdIncome": "71389"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Særvalg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Jon Husted",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Sherrod Brown Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Jon Husted Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "William B. Redpath Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Greg Levy Socialism and Liberation"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ohio Board of Elections, prøvestemmeseddel ↗",
+            "url": "https://www.boe.ohio.gov/abmt/oh33/20261103/X09____1_GOSHEN.html"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Mike DeWine",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Amy Acton Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Vivek Ramaswamy Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Don Kissick Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Clark County Board of Elections, officiel tilgængelig prøvestemmeseddel ↗",
+            "url": "https://www.boe.ohio.gov/abmt/oh12/20261103/X057___1_ENON_2.html"
+          }
+        ]
+      }
+    },
+    "MA": {
+      "code": "MA",
+      "name": "Massachusetts",
+      "houseSeats": 9,
+      "population": "7.154.084",
+      "admissionYear": "1788",
+      "admissionOrder": "6",
+      "metrics": {
+        "foreignBorn": "18,0",
+        "hispanic": "13,3",
+        "age65plus": "17,9",
+        "bachelor": "47,3",
+        "medianHouseholdIncome": "103960"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Ed Markey",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Edward J. Markey Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "John Deaton Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Shiva Ayyadurai Uafhængig"
+          },
+          {
+            "tag": "A",
+            "label": "Joe Tache Socialism and Liberation"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Massachusetts Secretary of the Commonwealth, kandidatliste ↗",
+            "url": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-state-election-candidates.htm"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Maura Healey",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Maura Healey Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Michael Minogue Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Andrea James Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Massachusetts Secretary of the Commonwealth, state election candidates ↗",
+            "url": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/2026-state-election-candidates.htm"
+          },
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i Massachusetts ↗",
+            "url": "https://ballotpedia.org/Massachusetts_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "NE": {
+      "code": "NE",
+      "name": "Nebraska",
+      "houseSeats": 3,
+      "population": "2.018.006",
+      "admissionYear": "1867",
+      "admissionOrder": "37",
+      "metrics": {
+        "foreignBorn": "8,0",
+        "hispanic": "12,7",
+        "age65plus": "16,7",
+        "bachelor": "34,6",
+        "medianHouseholdIncome": "76475"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Pete Ricketts",
+        "candidates": [
+          {
+            "tag": "R",
+            "label": "Pete Ricketts Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Dan Osborn Uafhængig"
+          },
+          {
+            "tag": "A",
+            "label": "Mike Marvin Legal Marijuana NOW Har suspenderet sin kampagne, men står fortsat på stemmesedlen."
+          },
+          {
+            "tag": "A",
+            "label": "Robin Richards Nebraska Working People"
+          },
+          {
+            "tag": "A",
+            "label": "Chuck Conboy America First"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Nebraska Secretary of State, endelig kandidatliste ↗",
+            "url": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/Final_Statewide_General_Candidate_Filing_List_9.11.26.pdf"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Jim Pillen",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Lynne Walz Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Jim Pillen Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Brett Lindstrom America First Party Nebraska"
+          },
+          {
+            "tag": "A",
+            "label": "Rick Beard Legal Marijuana NOW"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Nebraska Secretary of State, endelig statewide general candidate list, 11. september 2026 ↗",
+            "url": "https://sos.nebraska.gov/sites/default/files/doc/elections/2026/Final_Statewide_General_Candidate_Filing_List_9.11.26.pdf"
+          }
+        ]
+      }
+    },
+    "NH": {
+      "code": "NH",
+      "name": "New Hampshire",
+      "houseSeats": 2,
+      "population": "1.415.342",
+      "admissionYear": "1788",
+      "admissionOrder": "9",
+      "metrics": {
+        "foreignBorn": "6,1",
+        "hispanic": "4,7",
+        "age65plus": "20,1",
+        "bachelor": "40,6",
+        "medianHouseholdIncome": "99031"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Jeanne Shaheen",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Chris Pappas Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "John E. Sununu Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Edmond Laplante Constitution Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, New Hampshire 2026 ↗",
+            "url": "https://ballotpedia.org/United_States_Senate_election_in_New_Hampshire,_2026"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Kelly Ayotte",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Cinde Warmington Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Kelly Ayotte Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Stephen Villee Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernørvalget i New Hampshire ↗",
+            "url": "https://ballotpedia.org/New_Hampshire_gubernatorial_election,_2026"
+          },
+          {
+            "text": "New Hampshire Public Radio, kandidatguide 29. oktober 2026 ↗",
+            "url": "https://www.nhpr.org/politics/2026-10-29/whos-running-election-voting-ayotte-warmington-villee-republican-democrat-independent"
+          }
+        ]
+      }
+    },
+    "MI": {
+      "code": "MI",
+      "name": "Michigan",
+      "houseSeats": 13,
+      "population": "10.127.884",
+      "admissionYear": "1837",
+      "admissionOrder": "26",
+      "metrics": {
+        "foreignBorn": "7,2",
+        "hispanic": "5,9",
+        "age65plus": "18,6",
+        "bachelor": "32,4",
+        "medianHouseholdIncome": "72875"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Gary Peters",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Abdul El-Sayed Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Mike Rogers Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Lydia Christensen Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Tim Long U.S. Taxpayers Party"
+          },
+          {
+            "tag": "A",
+            "label": "Douglas P. Marsh Green Party"
+          },
+          {
+            "tag": "A",
+            "label": "Walter P. Kristy Natural Law Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Michigan Bureau of Elections, general election candidates ↗",
+            "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?electionType=GEN&electionYear=2026&page=page.miboePublicReport"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Gretchen Whitmer",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jocelyn Benson Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "John James Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Douglas Campbell Green Party"
+          },
+          {
+            "tag": "A",
+            "label": "Anthony Hudson Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Donna Brandenburg U.S. Taxpayers Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Michigan Bureau of Elections, offentlig kandidatliste ↗",
+            "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?electionType=GEN&electionYear=2026&page=page.miboePublicReport"
+          },
+          {
+            "text": "Ballotpedia, guvernørvalget i Michigan, herunder tilbagetrukne kandidater ↗",
+            "url": "https://ballotpedia.org/Michigan_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "NC": {
+      "code": "NC",
+      "name": "North Carolina",
+      "houseSeats": 14,
+      "population": "11.197.968",
+      "admissionYear": "1789",
+      "admissionOrder": "12",
+      "metrics": {
+        "foreignBorn": "9,1",
+        "hispanic": "11,3",
+        "age65plus": "17,2",
+        "bachelor": "35,7",
+        "medianHouseholdIncome": "72388"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Thom Tillis",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Roy Cooper Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Michael Whatley Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Shannon W. Bray Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Michael Dublin Green Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, North Carolina 2026 ↗",
+            "url": "https://ballotpedia.org/United_States_Senate_election_in_North_Carolina,_2026"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "ME": {
+      "code": "ME",
+      "name": "Maine",
+      "houseSeats": 2,
+      "population": "1.414.874",
+      "admissionYear": "1820",
+      "admissionOrder": "23",
+      "metrics": {
+        "foreignBorn": "4,1",
+        "hispanic": "2,2",
+        "age65plus": "22,4",
+        "bachelor": "36,2",
+        "medianHouseholdIncome": "74733"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Susan Collins",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Troy Jackson Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Susan Collins Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, Maine 2026 ↗",
+            "url": "https://ballotpedia.org/United_States_Senate_election_in_Maine,_2026"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Janet Mills",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Hannah Pingree Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Bobby Charles Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Richard Bennett Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernørvalget i Maine ↗",
+            "url": "https://ballotpedia.org/Maine_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "MD": {
+      "code": "MD",
+      "name": "Maryland",
+      "houseSeats": 8,
+      "population": "6.265.347",
+      "admissionYear": "1788",
+      "admissionOrder": "7",
+      "metrics": {
+        "foreignBorn": "16,6",
+        "hispanic": "12,5",
+        "age65plus": "16,7",
+        "bachelor": "43,4",
+        "medianHouseholdIncome": "103678"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Wes Moore",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Wes Moore Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Dan Cox Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Andy Ellis Green Party"
+          },
+          {
+            "tag": "A",
+            "label": "Cathy White Working Class Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Maryland State Archives, general election gubernatorial candidates ↗",
+            "url": "https://msa.maryland.gov/msa/mdmanual/42electg/html/2026/2026gov.html"
+          },
+          {
+            "text": "Maryland State Board of Elections, statewide candidate list ↗",
+            "url": "https://elections.maryland.gov/elections/2026/general_candidates/2026_GG_statewide_candidatelist.html"
+          }
+        ]
+      }
+    },
+    "NV": {
+      "code": "NV",
+      "name": "Nevada",
+      "houseSeats": 4,
+      "population": "3.282.188",
+      "admissionYear": "1864",
+      "admissionOrder": "36",
+      "metrics": {
+        "foreignBorn": "19,1",
+        "hispanic": "29,6",
+        "age65plus": "17,0",
+        "bachelor": "27,9",
+        "medianHouseholdIncome": "78260"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Joe Lombardo",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Aaron Ford Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Joe Lombardo Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Danielle Ford Uden partitilhørsforhold"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Washoe County, valginformation og kandidater 2026 ↗",
+            "url": "https://washoecounty.gov/voters/information/index.php"
+          }
+        ]
+      }
+    },
+    "NM": {
+      "code": "NM",
+      "name": "New Mexico",
+      "houseSeats": 3,
+      "population": "2.125.498",
+      "admissionYear": "1912",
+      "admissionOrder": "47",
+      "metrics": {
+        "foreignBorn": "9,4",
+        "hispanic": "48,4",
+        "age65plus": "19,3",
+        "bachelor": "31,0",
+        "medianHouseholdIncome": "64059"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Ben Ray Luján",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Ben Ray Luján Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Larry E. Marker Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "New Mexico Secretary of State, 2026-valgside (kandidatnavne, ingen resultater) ↗",
+            "url": "https://electionresults.sos.nm.gov/resultsSW.aspx?map=CTY&type=FED"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Michelle Lujan Grisham",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Deb Haaland Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Gregg Hull Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i New Mexico ↗",
+            "url": "https://ballotpedia.org/New_Mexico_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "MO": {
+      "code": "MO",
+      "name": "Missouri",
+      "houseSeats": 8,
+      "population": "6.270.541",
+      "admissionYear": "1821",
+      "admissionOrder": "24",
+      "metrics": {
+        "foreignBorn": "4,5",
+        "hispanic": "5,2",
+        "age65plus": "17,9",
+        "bachelor": "32,4",
+        "medianHouseholdIncome": "70702"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "MN": {
+      "code": "MN",
+      "name": "Minnesota",
+      "houseSeats": 8,
+      "population": "5.830.405",
+      "admissionYear": "1858",
+      "admissionOrder": "32",
+      "metrics": {
+        "foreignBorn": "8,7",
+        "hispanic": "6,4",
+        "age65plus": "17,3",
+        "bachelor": "39,4",
+        "medianHouseholdIncome": "89062"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Tina Smith",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Peggy Flanagan Democratic-Farmer-Labor (DFL)"
+          },
+          {
+            "tag": "R",
+            "label": "Michele Tafoya Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Marisa Simonetti Uafhængig"
+          },
+          {
+            "tag": "A",
+            "label": "Rebecca Whiting Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Minnesota Secretary of State, officiel stemmeseddel ↗",
+            "url": "https://myballotmn.sos.mn.gov/results?id=260922"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Tim Walz",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Amy Klobuchar Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Lisa Demuth Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Steven Young Green Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i Minnesota ↗",
+            "url": "https://ballotpedia.org/Minnesota_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "OK": {
+      "code": "OK",
+      "name": "Oklahoma",
+      "houseSeats": 5,
+      "population": "4.123.288",
+      "admissionYear": "1907",
+      "admissionOrder": "46",
+      "metrics": {
+        "foreignBorn": "6,4",
+        "hispanic": "12,7",
+        "age65plus": "16,3",
+        "bachelor": "28,3",
+        "medianHouseholdIncome": "65039"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Alan Armstrong",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "N’Kiyla Jasmine Thomas Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Kevin Hern Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Ron Meinhardt Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Curtis Stinnett Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Oklahoma State Election Board, valgoversigt ↗",
+            "url": "https://hosting.okelections.gov/electionlist.html"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Kevin Stitt",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Cyndi Munson Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Mike Mazzei Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Orlando Lynn Bush Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Robert E. Brooks Sr. Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Jerry Griffin Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Oklahoma State Election Board, kandidatliste ↗",
+            "url": "https://hosting.okelections.gov/electionlist.html"
+          }
+        ]
+      }
+    },
+    "NJ": {
+      "code": "NJ",
+      "name": "New Jersey",
+      "houseSeats": 12,
+      "population": "9.548.215",
+      "admissionYear": "1787",
+      "admissionOrder": "3",
+      "metrics": {
+        "foreignBorn": "23,9",
+        "hispanic": "22,5",
+        "age65plus": "17,2",
+        "bachelor": "43,6",
+        "medianHouseholdIncome": "103556"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Cory Booker",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Cory Booker Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Justin Murphy Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Veronica Fernandez Uafhængig: End the Corruption!"
+          },
+          {
+            "tag": "A",
+            "label": "Joanne Kuniansky Socialist Workers Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "New Jersey Monitor, valgguide ↗",
+            "url": "https://newjerseymonitor.com/voter-guide/2026-general/"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "PA": {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "houseSeats": 17,
+      "population": "13.059.432",
+      "admissionYear": "1787",
+      "admissionOrder": "2",
+      "metrics": {
+        "foreignBorn": "7,7",
+        "hispanic": "8,7",
+        "age65plus": "19,5",
+        "bachelor": "35,2",
+        "medianHouseholdIncome": "77971"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Josh Shapiro",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Josh Shapiro Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Stacy Garrity Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Ken Krawchuk Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, fælles general election for guvernør og viceguvernør ↗",
+            "url": "https://ballotpedia.org/Pennsylvania_lieutenant_gubernatorial_election,_2026"
+          },
+          {
+            "text": "Penn State University Libraries, kandidatguide 2026 ↗",
+            "url": "https://guides.libraries.psu.edu/HBGvote2026midterm/candidates"
+          }
+        ]
+      }
+    },
+    "OR": {
+      "code": "OR",
+      "name": "Oregon",
+      "houseSeats": 6,
+      "population": "4.273.586",
+      "admissionYear": "1859",
+      "admissionOrder": "33",
+      "metrics": {
+        "foreignBorn": "9,8",
+        "hispanic": "14,7",
+        "age65plus": "19,1",
+        "bachelor": "36,8",
+        "medianHouseholdIncome": "83011"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Jeff Merkley",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jeff Merkley Demokraterne / Working Families"
+          },
+          {
+            "tag": "R",
+            "label": "David Brock Smith Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Gary Lyndon Dye Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Chris Henry Progressive / Pacific Green"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, Oregon 2026 ↗",
+            "url": "https://ballotpedia.org/United_States_Senate_election_in_Oregon,_2026"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Tina Kotek",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Tina Kotek Demokraterne / Working Families Party"
+          },
+          {
+            "tag": "R",
+            "label": "Christine Drazan Republikanerne / Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Brett Smith Pacific Green Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernørvalget i Oregon ↗",
+            "url": "https://ballotpedia.org/Oregon_gubernatorial_election,_2026"
+          }
+        ]
+      }
+    },
+    "WI": {
+      "code": "WI",
+      "name": "Wisconsin",
+      "houseSeats": 8,
+      "population": "5.972.787",
+      "admissionYear": "1848",
+      "admissionOrder": "30",
+      "metrics": {
+        "foreignBorn": "5,2",
+        "hispanic": "8,0",
+        "age65plus": "18,5",
+        "bachelor": "33,4",
+        "medianHouseholdIncome": "77485"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Tony Evers",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "David Crowley Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Tom Tiffany Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, guvernør- og viceguvernørvalget i Wisconsin ↗",
+            "url": "https://ballotpedia.org/Wisconsin_gubernatorial_and_lieutenant_gubernatorial_election,_2026"
+          },
+          {
+            "text": "Ballotpedia, statewide executive elections, herunder write-in-status ↗",
+            "url": "https://ballotpedia.org/Wisconsin_state_executive_official_elections,_2026"
+          }
+        ]
+      }
+    },
+    "RI": {
+      "code": "RI",
+      "name": "Rhode Island",
+      "houseSeats": 2,
+      "population": "1.114.521",
+      "admissionYear": "1790",
+      "admissionOrder": "13",
+      "metrics": {
+        "foreignBorn": "15,3",
+        "hispanic": "17,7",
+        "age65plus": "18,7",
+        "bachelor": "37,7",
+        "medianHouseholdIncome": "87796"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Jack Reed",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jack Reed Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Raymond T. McKay Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Michael Anthony Bahry Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Rhode Island Secretary of State, kandidatliste ↗",
+            "url": "https://vote.sos.ri.gov/Candidates/CandidateSearchSummary?Election=18144&OfficeType=620"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Dan McKee",
+        "currentParty": "Demokraterne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Helena Foulkes Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Aaron Guckian Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Kenneth J. Block Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Jasjit S. Gotra Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "C. D. Reynolds Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Rhode Island Department of State, kandidater med On Election Ballot = Y ↗",
+            "url": "https://vote.sos.ri.gov/Candidates/CandidateSearchSummary?Election=18144&OfficeType=549"
+          }
+        ]
+      }
+    },
+    "SD": {
+      "code": "SD",
+      "name": "South Dakota",
+      "houseSeats": 1,
+      "population": "935.094",
+      "admissionYear": "1889",
+      "admissionOrder": "40",
+      "metrics": {
+        "foreignBorn": "4,0",
+        "hispanic": "4,8",
+        "age65plus": "18,0",
+        "bachelor": "31,9",
+        "medianHouseholdIncome": "75081"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Mike Rounds",
+        "candidates": [
+          {
+            "tag": "R",
+            "label": "Mike Rounds Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Brian L. Bengs Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "South Dakota Secretary of State, general election candidates ↗",
+            "url": "https://vip.sdsos.gov/candidatelist.aspx?eid=774"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Larry Rhoden",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Dan Ahlers Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Larry Rhoden Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "South Dakota Secretary of State, kandidatliste til general election ↗",
+            "url": "https://vip.sdsos.gov/candidatelist.aspx?eid=774"
+          }
+        ]
+      }
+    },
+    "TX": {
+      "code": "TX",
+      "name": "Texas",
+      "houseSeats": 38,
+      "population": "31.709.821",
+      "admissionYear": "1845",
+      "admissionOrder": "28",
+      "metrics": {
+        "foreignBorn": "17,6",
+        "hispanic": "39,7",
+        "age65plus": "13,4",
+        "bachelor": "33,8",
+        "medianHouseholdIncome": "78476"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "John Cornyn",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "James Talarico Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Ken Paxton Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Ted Brown Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Texas Secretary of State, certificeret stemmeseddel ↗",
+            "url": "https://www.sos.state.tx.us/elections/forms/2026-ballot-cert.pdf"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Greg Abbott",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Gina Hinojosa Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Greg Abbott Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Pat Dixon Libertarian Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Texas Secretary of State, certificering af general election ballot 2026 ↗",
+            "url": "https://www.sos.state.tx.us/elections/forms/2026-ballot-cert.pdf"
+          }
+        ]
+      }
+    },
+    "VT": {
+      "code": "VT",
+      "name": "Vermont",
+      "houseSeats": 1,
+      "population": "644.663",
+      "admissionYear": "1791",
+      "admissionOrder": "14",
+      "metrics": {
+        "foreignBorn": "4,3",
+        "hispanic": "2,6",
+        "age65plus": "21,4",
+        "bachelor": "43,8",
+        "medianHouseholdIncome": "81203"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Phil Scott",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Amanda Janoo Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Phil Scott Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Dean Roy Freedom and Unity Party"
+          },
+          {
+            "tag": "A",
+            "label": "June Goodband Green Mountain Peace and Justice Party"
+          },
+          {
+            "tag": "U",
+            "label": "Brian Judd Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Ballotpedia, Governor of Vermont, valgafsnit 2026 ↗",
+            "url": "https://ballotpedia.org/Governor_of_Vermont"
+          }
+        ]
+      }
+    },
+    "TN": {
+      "code": "TN",
+      "name": "Tennessee",
+      "houseSeats": 9,
+      "population": "7.315.076",
+      "admissionYear": "1796",
+      "admissionOrder": "16",
+      "metrics": {
+        "foreignBorn": "6,1",
+        "hispanic": "7,4",
+        "age65plus": "17,1",
+        "bachelor": "31,1",
+        "medianHouseholdIncome": "69595"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Bill Hagerty",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Marquita Bradshaw Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Bill Hagerty Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Tharon Chandler Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Andrew Gerena Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Jeremy Dean Hearn Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Robert Jones Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "James William Macon III Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Yoshi D. Matthews Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "David Sutman Jr. Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Catherine Barcel \"Barcy\" Whitson Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "TN Election, baseret på Secretary of State-kandidatliste ↗",
+            "url": "https://tnelection.org/races/us-senate/"
+          },
+          {
+            "text": "Tennessee Secretary of State, officiel kandidatliste (PDF) ↗",
+            "url": "https://sos-prod.tnsosgovfiles.com/s3fs-public/document/USSenate_Nov2026.pdf"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Bill Lee",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jerri Green Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Marsha Blackburn Republikanerne"
+          },
+          {
+            "tag": "U",
+            "label": "Misam Abidi Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Dean Brewer Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Ray Brown Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "David Hatley Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Wendell Jackson Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Charles Van Morgan Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Eddie Lee Murphy Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Lauren Pinkston Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Victor L. Scoggin Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Dave Seeman Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Karl Knox Smithson Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "L. Webb Taylor Uafhængig"
+          },
+          {
+            "tag": "U",
+            "label": "Robert C. Vick Uafhængig"
+          }
+        ],
+        "sources": [
+          {
+            "text": "TN Election, kandidatfelt til guvernørvalget med link til statens kandidatliste ↗",
+            "url": "https://tnelection.org/races/governor/"
+          },
+          {
+            "text": "Ballotpedia, Tennessee elections 2026 ↗",
+            "url": "https://ballotpedia.org/Tennessee_elections,_2026"
+          }
+        ]
+      }
+    },
+    "WY": {
+      "code": "WY",
+      "name": "Wyoming",
+      "houseSeats": 1,
+      "population": "588.753",
+      "admissionYear": "1890",
+      "admissionOrder": "44",
+      "metrics": {
+        "foreignBorn": "3,5",
+        "hispanic": "10,7",
+        "age65plus": "18,5",
+        "bachelor": "30,6",
+        "medianHouseholdIncome": "76176"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Cynthia Lummis",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "James Byrd Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Harriet Hageman Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Wyoming Secretary of State, general election candidates ↗",
+            "url": "https://sos.wyo.gov/Elections/Docs/2026/2026_WY_General_Election_Candidates.pdf"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Mark Gordon",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Kenneth R. Casner Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Eric Barlow Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Rebecca Bextel Constitution Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Wyoming Secretary of State, general election candidates ↗",
+            "url": "https://sos.wyo.gov/Elections/Docs/2026/2026_WY_General_Election_Candidates.pdf"
+          }
+        ]
+      }
+    },
+    "UT": {
+      "code": "UT",
+      "name": "Utah",
+      "houseSeats": 4,
+      "population": "3.538.904",
+      "admissionYear": "1896",
+      "admissionOrder": "45",
+      "metrics": {
+        "foreignBorn": "8,9",
+        "hispanic": "15,9",
+        "age65plus": "11,9",
+        "bachelor": "37,7",
+        "medianHouseholdIncome": "95166"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "WV": {
+      "code": "WV",
+      "name": "West Virginia",
+      "houseSeats": 2,
+      "population": "1.766.147",
+      "admissionYear": "1863",
+      "admissionOrder": "35",
+      "metrics": {
+        "foreignBorn": "1,8",
+        "hispanic": "2,1",
+        "age65plus": "21,0",
+        "bachelor": "24,1",
+        "medianHouseholdIncome": "59608"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Shelley Moore Capito",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Rachel Fetty Anderson Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Shelley Moore Capito Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "S. Marshall Wilson Constitution Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "West Virginia Public Broadcasting, valgguide ↗",
+            "url": "https://wvpublic.org/newsroom/west-virginia-2026-general-election-voters-guide/"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "SC": {
+      "code": "SC",
+      "name": "South Carolina",
+      "houseSeats": 7,
+      "population": "5.570.274",
+      "admissionYear": "1788",
+      "admissionOrder": "8",
+      "metrics": {
+        "foreignBorn": "5,8",
+        "hispanic": "7,4",
+        "age65plus": "18,9",
+        "bachelor": "32,1",
+        "medianHouseholdIncome": "69324"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Republikanerne",
+        "incumbent": "Darline Graham",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Annie Andrews Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Darline Graham Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Kasie Whitener Libertarian Party"
+          },
+          {
+            "tag": "A",
+            "label": "Mark Hackett Constitution Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Charleston County Board of Voter Registration & Elections ↗",
+            "url": "https://vote.charlestoncounty.gov/?r=816"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": true,
+        "incumbent": "Henry McMaster",
+        "currentParty": "Republikanerne",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Jermaine Johnson Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Alan Wilson Republikanerne"
+          },
+          {
+            "tag": "A",
+            "label": "Walid Hakim Green Party"
+          },
+          {
+            "tag": "A",
+            "label": "Michael Addison United Citizens Party"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Charleston County Board of Voter Registration and Elections, general election candidates ↗",
+            "url": "https://vote.charlestoncounty.gov/?r=816"
+          }
+        ]
+      }
+    },
+    "WA": {
+      "code": "WA",
+      "name": "Washington",
+      "houseSeats": 10,
+      "population": "8.001.020",
+      "admissionYear": "1889",
+      "admissionOrder": "42",
+      "metrics": {
+        "foreignBorn": "15,4",
+        "hispanic": "14,4",
+        "age65plus": "16,6",
+        "bachelor": "39,6",
+        "medianHouseholdIncome": "98141"
+      },
+      "senate": {
+        "onBallot": false,
+        "electionType": null,
+        "currentParty": null,
+        "incumbent": null,
+        "candidates": [],
+        "sources": []
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    },
+    "VA": {
+      "code": "VA",
+      "name": "Virginia",
+      "houseSeats": 11,
+      "population": "8.880.107",
+      "admissionYear": "1788",
+      "admissionOrder": "10",
+      "metrics": {
+        "foreignBorn": "13,1",
+        "hispanic": "11,0",
+        "age65plus": "16,7",
+        "bachelor": "42,2",
+        "medianHouseholdIncome": "93170"
+      },
+      "senate": {
+        "onBallot": true,
+        "electionType": "Ordinært valg",
+        "currentParty": "Demokraterne",
+        "incumbent": "Mark Warner",
+        "candidates": [
+          {
+            "tag": "D",
+            "label": "Mark R. Warner Demokraterne"
+          },
+          {
+            "tag": "R",
+            "label": "Bert Mizusawa Republikanerne"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Fairfax County Office of Elections, stemmeseddel ↗",
+            "url": "https://www.fairfaxcounty.gov/elections/"
+          }
+        ]
+      },
+      "governor": {
+        "onBallot": false,
+        "incumbent": null,
+        "currentParty": null,
+        "candidates": [],
+        "sources": []
+      }
+    }
+  }
+}
