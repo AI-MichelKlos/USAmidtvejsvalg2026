@@ -21,6 +21,8 @@ jobs:
           cases=[
             "https://ai-michelklos.github.io/USAmidtvejsvalg/",
             "https://ai-michelklos.github.io/USAmidtvejsvalg2026/",
+            "https://ai-michelklos.github.io/USAmidtvejsvalg/del-linkedin-2026.html",
+            "https://ai-michelklos.github.io/USAmidtvejsvalg2026/del-linkedin-2026.html",
             "https://ai-michelklos.github.io/USAmidtvejsvalg/?utm_source=chatgpt.com&view=senate&state=IL&rev=20261031",
           ]
           class Tags(HTMLParser):
