@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Midtvejsvalg i USA 2026</title>
+<desc id="desc">Et farverigt delingsbillede med teksten Hvem får magten? og illustrationer af amerikansk politik og valg.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#061d42"/><stop offset=".48" stop-color="#155687"/><stop offset="1" stop-color="#5b9caf"/></linearGradient>
+  <linearGradient id="light" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff6e5"/><stop offset="1" stop-color="#d2e6e8"/></linearGradient>
+  <linearGradient id="red" x1="0" x2="1"><stop offset="0" stop-color="#c44548"/><stop offset="1" stop-color="#e27e5a"/></linearGradient>
+  <linearGradient id="green" x1="0" x2="1"><stop offset="0" stop-color="#066b60"/><stop offset="1" stop-color="#0c9276"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="150%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#07182f" flood-opacity=".32"/></filter>
+  <pattern id="stars" width="103" height="93" patternUnits="userSpaceOnUse"><path d="m24 14 3.4 10.2h10.7l-8.6 6.3 3.3 10.2-8.8-6.4-8.7 6.4 3.3-10.2-8.7-6.3H21z" fill="#ffffff" opacity=".075"/></pattern>
+  <clipPath id="leftclip"><rect x="0" y="0" width="830" height="630"/></clipPath>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<rect width="1200" height="630" fill="url(#stars)"/>
+<g opacity=".17" clip-path="url(#leftclip)" transform="rotate(-17 300 300)">
+  <rect x="-180" y="355" width="1170" height="49" fill="#f4f7f5"/>
+  <rect x="-180" y="423" width="1170" height="49" fill="#c7434e"/>
+  <rect x="-180" y="490" width="1170" height="49" fill="#f4f7f5"/>
+  <rect x="-180" y="557" width="1170" height="49" fill="#c7434e"/>
+</g>
+<ellipse cx="620" cy="486" rx="290" ry="200" fill="#f3e8c9" opacity=".09"/>
+<g transform="translate(46,36)">
+  <rect x="0" y="0" width="355" height="38" rx="12" fill="url(#green)"/>
+  <text x="20" y="26" fill="white" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" letter-spacing="1">USA · MIDTVEJSVALG 2026</text>
+</g>
+<text x="47" y="161" fill="#ffffff" font-family="DejaVu Sans,Arial,sans-serif" font-weight="bold" font-size="69" letter-spacing="-2">Hvem får magten?</text>
+<text x="52" y="205" fill="#dceaf1" font-family="DejaVu Sans,Arial,sans-serif" font-size="23">Senatet · Huset · Guvernører · Lokale valg</text>
+
+<!-- Decorative United States-inspired map shape, without partisan result coloring -->
+<g transform="translate(65,255)" filter="url(#shadow)">
+  <path d="M28 29 L76 44 L93 32 L112 39 L130 20 L164 26 L177 46 L201 39 L220 57 L259 56 L278 73 L314 66 L342 79 L360 65 L390 75 L413 61 L439 77 L469 64 L485 86 L513 80 L534 98 L563 97 L593 80 L609 95 L641 86 L659 105 L683 115 L672 140 L652 144 L633 162 L611 158 L599 186 L578 197 L560 185 L548 207 L530 200 L522 221 L514 245 L505 229 L487 190 L465 176 L446 191 L427 182 L415 200 L393 189 L381 208 L364 198 L352 216 L321 220 L316 203 L279 211 L255 196 L235 210 L217 191 L195 206 L166 188 L147 191 L135 166 L116 164 L108 148 L91 143 L70 117 L55 124 L49 94 L36 90 L43 68 L24 62 Z"
+    fill="#dcebf2" stroke="#fefefe" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M75 40 L63 104 L107 147 M130 23 L127 169 M177 46 L167 188 M221 57 L217 191 M258 57 L254 195 M279 74 L278 209 M315 67 L320 216 M350 78 L354 208 M389 76 L385 192 M411 65 L413 195 M439 78 L446 184 M473 68 L467 176 M510 89 L524 202 M543 95 L553 187 M574 102 L580 177 M606 94 L610 163 M643 92 L632 161"
+    stroke="#35769c" stroke-width="2.5" stroke-linecap="round" opacity=".5" fill="none"/>
+  <path d="M44 80 L642 131 M69 113 L602 156 M134 164 L548 183" fill="none" stroke="#35769c" stroke-width="2.5" opacity=".37"/>
+  <path d="M77 237 l23 -9 8 7 -6 14 18 -3 12 15 -27 16 -15 -9 -18 9 -18 -21 z M135 273 l11 5 -2 7 -14 -3 z M156 281 l15 6 -2 5 -16 -3 z" fill="#dcebf2" stroke="#fff" stroke-width="2"/>
+</g>
+<!-- Capitol icon -->
+<g transform="translate(610,246)" fill="none" stroke="#f4e8cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".84">
+  <path d="M60 105 Q65 59 108 56 Q150 58 159 105"/>
+  <path d="M78 57 Q89 30 107 32 Q126 33 139 58"/>
+  <path d="M103 32 V17 M95 18 L111 18"/>
+  <path d="M55 106 H166 M48 120 H174"/>
+  <path d="M58 126 V191 M82 126 V191 M108 126 V191 M133 126 V191 M156 126 V191"/>
+  <path d="M40 192 H181 M30 205 H192 M45 220 H177"/>
+</g>
+<g transform="translate(850 48)">
+  <rect width="316" height="487" rx="25" fill="#fffdf7" opacity=".97" filter="url(#shadow)"/>
+  <text x="25" y="38" fill="#123c65" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">HVAD STEMMER MAN OM?</text>
+  <line x1="25" y1="58" x2="292" y2="58" stroke="#dadfdb"/>
+  <g font-family="DejaVu Sans,Arial,sans-serif">
+    <circle cx="51" cy="103" r="26" fill="#184a80"/><path d="M35 113 h32 M37 95 h28 M40 101 v12 M49 101 v12 M58 101 v12 M66 94 l-15 -10 -15 10" stroke="white" stroke-width="3" fill="none" stroke-linejoin="round"/><text x="91" y="100" font-size="22" font-weight="bold" fill="#153c68">Senatet</text><text x="91" y="120" font-size="14" fill="#53677d">100 senatorer</text>
+    <line x1="23" y1="146" x2="292" y2="146" stroke="#e7e9e6"/>
+    <circle cx="51" cy="187" r="26" fill="#0b796f"/><path d="M36 197 h30 M39 180 h24 M40 184 v12 M48 184 v12 M56 184 v12 M64 183 l-14 -9 -14 9" stroke="white" stroke-width="3" fill="none"/><text x="91" y="185" font-size="22" font-weight="bold" fill="#153c68">Huset</text><text x="91" y="205" font-size="14" fill="#53677d">435 medlemmer</text>
+    <line x1="23" y1="230" x2="292" y2="230" stroke="#e7e9e6"/>
+    <circle cx="51" cy="271" r="26" fill="#bf5147"/><path d="M35 281 h33 M37 265 h30 M43 265 v16 M51 265 v16 M60 265 v16 M39 264 l11 -12 15 12" stroke="white" stroke-width="3" fill="none"/><text x="91" y="267" font-size="21" font-weight="bold" fill="#153c68">Guvernører</text><text x="91" y="290" font-size="14" fill="#53677d">Delstaternes ledere</text>
+    <line x1="23" y1="315" x2="292" y2="315" stroke="#e7e9e6"/>
+    <circle cx="51" cy="356" r="26" fill="#a9762e"/><path d="M39 362 l11 -18 12 18 z M44 363 v6 M56 363 v6" stroke="white" stroke-width="3" fill="none" stroke-linejoin="round"/><text x="91" y="352" font-size="21" font-weight="bold" fill="#153c68">Lokale valg</text><text x="91" y="375" font-size="13" fill="#53677d">Sheriffer og dommere</text>
+    <rect x="22" y="404" width="272" height="57" rx="15" fill="#d2eae4"/>
+    <text x="43" y="437" font-size="18" font-weight="bold" fill="#136351">Klik og læs mere</text>
+    <path d="M263 430 l7 7 -7 7" stroke="#136351" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</g>
+<rect x="45" y="568" width="746" height="47" rx="23" fill="url(#green)" opacity=".96"/>
+<text x="72" y="600" fill="white" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">Interaktivt valgkort og guide på dansk</text>
+</svg>
