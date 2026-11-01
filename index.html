@@ -1,37 +1,103 @@
-<!DOCTYPE html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Valg USA 2026 | Hvem får magten?</title>
-<style>:root{font:16px system-ui,Arial;color:#18293b;background:#f5f5f1}*{box-sizing:border-box}body{margin:0}header{background:white;border-bottom:1px solid #ddd;padding:19px 4%;display:flex;gap:15px;align-items:center;flex-wrap:wrap;justify-content:space-between}header b{font-size:1.4rem}button,select{font:inherit;cursor:pointer}nav{display:flex;flex-wrap:wrap;gap:5px}nav button{border:1px solid #d7dfe5;background:white;padding:10px 13px;border-radius:30px}nav button.active{background:#14283f;color:white}main{max-width:1300px;margin:auto;padding:24px 16px}.overline{font-size:.77rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#6d7580}h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.15;letter-spacing:-.05em;margin:13px 0}h2{letter-spacing:-.04em}p{line-height:1.55}.muted{color:#627386}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.stat,.card{background:white;border:1px solid #e1e5e7;border-radius:15px;padding:20px}.stat strong{display:block;font-size:2.1rem;margin:5px 0}.stat small{color:#667684}.layout{display:grid;grid-template-columns:1.6fr 1fr;gap:16px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}select{padding:10px;border:1px solid #ccd6e0;border-radius:7px;background:white;max-width:100%}.legend{display:flex;gap:15px;flex-wrap:wrap;font-size:.8rem;color:#647184;margin:8px 0 18px}.dot{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle;margin-right:5px}.map{min-height:330px;display:flex;align-items:center}.map svg{width:100%;height:auto}.state{stroke:white;stroke-width:1.2;cursor:pointer}.state:hover,.state:focus{filter:brightness(.8);stroke:#14283f;stroke-width:2}.selected{stroke:#14283f;stroke-width:3}.fallback{display:grid;grid-template-columns:repeat(auto-fill,minmax(85px,1fr));gap:6px}.fallback button{padding:9px;background:#eef2f5;border:1px solid #dde4e8;border-radius:7px}.fallback button.selected{background:#14283f;color:white}.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:0 12px}.metric{padding:13px 0;border-bottom:1px solid #e5e9ec}.metric span{display:block;color:#617081;font-size:.79rem}.metric strong{font-size:1.26rem}.tag{display:inline-block;padding:5px 10px;background:#edf1f3;border-radius:25px;font-size:.84rem;font-weight:700}.red{background:#fde9e9;color:#a22b30}.blue{background:#e8f0ff;color:#2058a2}ul.people{padding:0;list-style:none}ul.people li{padding:9px 0;border-bottom:1px solid #e6eaed}.sources a{display:block;overflow-wrap:anywhere;font-size:.82rem;padding:4px 0}footer{margin-top:25px;padding:20px 0;border-top:1px solid #dce2e6;font-size:.82rem;color:#637084}.note{font-size:.8rem;color:#697785}.info{padding:10px;border-left:3px solid #bb4755;background:#faf4f3;font-size:.87rem}@media(max-width:850px){.layout{grid-template-columns:1fr}}@media(max-width:530px){.stats{gap:6px}.stat{padding:10px}.stat strong{font-size:1.45rem}.card{padding:14px}.metrics{grid-template-columns:1fr 1fr}}</style>
-</head><body><header><b>VALG USA 2026</b><nav><button data-view="senate">Senatet</button><button data-view="house">Repræsentanternes Hus</button><button data-view="governors">Guvernører</button><button data-view="chicago">Chicago</button></nav></header><main>
-<div class="overline">Midtvejsvalg i USA · 3. november 2026</div><h1 id="heading">Hvem får magten i Senatet?</h1><p class="muted" id="desc"></p><section id="stats" class="stats"></section><div class="layout"><section class="card"><div class="toolbar"><h2>De 50 delstater</h2><select id="select" aria-label="Vælg delstat"></select></div><div class="legend"><span><i class="dot" style="background:#4278cd"></i>Demokrater</span><span><i class="dot" style="background:#c84d59"></i>Republikanere</span><span><i class="dot" style="background:#d3d7da"></i>Ikke på valg</span></div><div id="map" class="map">Henter kort...</div><p class="note" id="mapnote"></p></section><aside class="card" id="profile" aria-live="polite"></aside></div>
-<footer>Selvstændig rekonstruktion af valgguiden fra 31. oktober 2026. Den oprindelige projektkode er ikke tilgængelig. Befolkningstal: Census 2025. Demografi og median husstandsindkomst: ACS 2020-2024, indkomst i 2024-dollar. Ingen live-resultater eller prognoser. <a href="https://valgkort-usa-2026-michel.danske-a-kas-7580.chatgpt.site/">Se den oprindelige valgguide</a>.</footer></main>
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
-<script>
-const fips={"01":"AL","02":"AK","04":"AZ","05":"AR","06":"CA","08":"CO","09":"CT","10":"DE","12":"FL","13":"GA","15":"HI","16":"ID","17":"IL","18":"IN","19":"IA","20":"KS","21":"KY","22":"LA","23":"ME","24":"MD","25":"MA","26":"MI","27":"MN","28":"MS","29":"MO","30":"MT","31":"NE","32":"NV","33":"NH","34":"NJ","35":"NM","36":"NY","37":"NC","38":"ND","39":"OH","40":"OK","41":"OR","42":"PA","44":"RI","45":"SC","46":"SD","47":"TN","48":"TX","49":"UT","50":"VT","51":"VA","53":"WA","54":"WV","55":"WI","56":"WY"};
-const $=s=>document.querySelector(s), esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));let states={},geo=null,view="senate",selected="IL";
-function party(p){return p==="Demokraterne"?"#4278cd":p==="Republikanerne"?"#c84d59":"#d3d7da"}
-function number(s){return s?Number(String(s).replace(/[^0-9]/g,"")).toLocaleString("da-DK"):"Ikke oplyst"}
-function card(label,num,foot){return '<div class="stat"><small>'+label+'</small><strong>'+num+'</strong><small>'+foot+'</small></div>'}
-function selection(code){if(!states[code])return;selected=code;let u=new URL(location);u.searchParams.set("view",view);u.searchParams.set("state",selected);history.replaceState(null,"",u);render()}
-function color(s){if(view==="house")return "#a7bbc9";if(view==="chicago")return s.code==="IL"?"#4278cd":"#d3d7da";let e=s[view==="governors"?"governor":"senate"];return e&&e.onBallot?party(e.currentParty):"#d3d7da"}
-function people(e){if(!e)return"";let r=e.onBallot?"<h3>Kandidater</h3>"+(e.candidates.length?'<ul class="people">'+e.candidates.map(c=>'<li>'+esc(c.label)+'</li>').join("")+'</ul>':"<p>Ingen kandidater oplyst</p>"):"<p>Ikke på valg i 2026.</p>";r+='<div class="sources">'+(e.sources||[]).map(s=>'<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.text)+'</a>').join("")+'</div>';return r}
-function metric(name,value){return '<div class="metric"><span>'+name+'</span><strong>'+esc(value)+'</strong></div>'}
-function render(){
-const info={
-senate:["Hvem får magten i Senatet?","35 sæder på valg. Klik på en delstat for at læse om kandidaterne.",card("Demokrater + 2 uafhængige","47","Før valget")+card("Republikanere","53","Før valget")+card("Senatssæder på valg","35","13 demokratiske, 22 republikanske")],
-house:["Hvem får flertallet i Huset?","Alle 435 pladser er på valg. Denne udgave viser delstaternes antal mandater.",card("Pladser i Huset","435","Alle på valg")+card("Flertalsgrænse","218","Ved et fuldt hus")+card("Delstater","50","D.C. og territorier indgår ikke")],
-governors:["Hvem skal lede delstaterne?","36 guvernørposter er på valg i 2026.",card("Demokratiske guvernører","24","Før valget")+card("Republikanske guvernører","26","Før valget")+card("På valg","36","14 er ikke på valg")],
-chicago:["Hvad stemmer Chicago om?","Chicago ligger i Illinois. Se Illinois' kandidater og delstatsdata.",card("Delstat","Illinois","Chicago")+card("Senatsvalg","1","På valg")+card("Guvernørvalg","1","På valg")]};
-if(view==="chicago")selected="IL";
-$("#heading").textContent=info[view][0];$("#desc").textContent=info[view][1];$("#stats").innerHTML=info[view][2];$("#select").value=selected;document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("active",b.dataset.view===view));
-let s=states[selected],e=s[view==="governors"?"governor":"senate"],m=s.metrics;let body='<div class="overline">'+esc(selected)+'</div><h2>'+esc(s.name)+'</h2><p class="muted">Optaget i USA: '+s.admissionYear+' ('+s.admissionOrder+'. delstat)</p>';
-if(view==="house")body+='<p class="info">Delstaten har <b>'+s.houseSeats+' distrikter</b> i Repræsentanternes Hus. Denne rekonstruktion indeholder ikke den originale sides detaljerede distriktskort og kandidatoversigt.</p>';
-else if(view==="chicago")body+='<h3>Senatet</h3>'+people(s.senate)+'<h3>Guvernørvalg</h3>'+people(s.governor);
-else body+='<p><span class="tag '+(e.onBallot?"blue":"")+'">'+(e.onBallot?"På valg i 2026":"Ikke på valg i 2026")+'</span></p>'+(e.currentParty?'<p>Nuværende parti: <b>'+esc(e.currentParty)+'</b></p>':'')+(e.incumbent?'<p>Nuværende '+(view==="governors"?"guvernør":"senator")+': <b>'+esc(e.incumbent)+'</b></p>':'')+people(e);
-body+='<h3>Kort om delstaten</h3><div class="metrics">'+metric("Indbyggere (2025)",number(s.population))+metric("Median husstandsindkomst",number(m.medianHouseholdIncome)+" $")+metric("Født i udlandet",m.foreignBorn+" %")+metric("Hispanic/Latino",m.hispanic+" %")+metric("65 år eller ældre",m.age65plus+" %")+metric("Bachelorgrad eller højere (25+)",m.bachelor+" %")+'</div><p class="note">ACS 2020-2024. Indkomst i 2024-dollar. Hispanic/Latino er etnicitet.</p>';
-$("#profile").innerHTML=body;
-$("#mapnote").textContent=view==="house"?"Kun delstatskort. Det originale distriktskort er ikke inkluderet.":"Farverne viser partiet før valget, hvis posten er på valg.";
-const map=$("#map");
-if(geo&&window.d3&&window.topojson){map.innerHTML="";let features=topojson.feature(geo,geo.objects.states).features;let projection=d3.geoAlbersUsa().fitSize([780,510],{type:"FeatureCollection",features});let path=d3.geoPath(projection);d3.select(map).append("svg").attr("viewBox","0 0 780 510").attr("role","group").attr("aria-label","Interaktivt kort over USAs delstater").selectAll("path").data(features).enter().append("path").attr("class",d=>"state"+(fips[String(d.id).padStart(2,"0")]===selected?" selected":"")).attr("d",path).attr("fill",d=>color(states[fips[String(d.id).padStart(2,"0")]]||{})).attr("tabindex",0).on("click",(event,d)=>selection(fips[String(d.id).padStart(2,"0")])).on("keydown",(event,d)=>{if(event.key==="Enter")selection(fips[String(d.id).padStart(2,"0")])}).append("title").text(d=>states[fips[String(d.id).padStart(2,"0")]]?.name||"");}
-else{map.innerHTML='<div class="fallback">'+Object.values(states).sort((a,b)=>a.name.localeCompare(b.name)).map(s=>'<button data-code="'+s.code+'" class="'+(s.code===selected?"selected":"")+'">'+esc(s.name)+'</button>').join("")+'</div>';map.querySelectorAll("button").forEach(b=>b.onclick=()=>selection(b.dataset.code));}
-}
-async function start(){try{const response=await fetch("./data/states.json");if(!response.ok)throw Error("Data kunne ikke hentes");states=(await response.json()).states;const q=new URLSearchParams(location.search);view=["senate","house","governors","chicago"].includes(q.get("view"))?q.get("view"):"senate";selected=states[q.get("state")]?q.get("state"):"IL";$("#select").innerHTML=Object.values(states).sort((a,b)=>a.name.localeCompare(b.name)).map(s=>'<option value="'+s.code+'">'+esc(s.name)+'</option>').join("");$("#select").onchange=e=>selection(e.target.value);document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{view=b.dataset.view;selection(view==="chicago"?"IL":selected)});render();try{const r=await fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json");if(!r.ok)throw Error("Kort unavailable");geo=await r.json();render()}catch(err){console.warn("Kort utilgængeligt, viser delstatsvalg",err)}}catch(err){$("#map").textContent="Fejl: "+err.message}}start();
-</script></body></html>
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#3c342b">
+  <meta name="description" content="Udforsk Senatet, alle 435 kongresdistrikter og guvernørvalgene i USA i 2026. Se partiernes sæder på valg, og hvad der er på stemmesedlen i Chicago.">
+  <title>Valg USA 2026: Hvem får magten?</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/d3.min.js"></script>
+  <script defer src="assets/topojson-client.min.js"></script>
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/math.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Gå til indhold</a>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand-lockup"><a href="#" class="brand" aria-label="Valg USA 2026, forsiden"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span>VALG USA <b>2026</b></span></a><span class="brand-credit">Udarbejdet af Michel Klos</span></div>
+      <nav class="nav" aria-label="Hovedmenu">
+        <button type="button" class="nav-link active" data-view="senate" aria-current="page">Senatet</button>
+        <button type="button" class="nav-link" data-view="house" aria-label="Repræsentanternes Hus"><span class="nav-full">Repræsentanternes Hus</span><span class="nav-short">Huset</span></button>
+        <button type="button" class="nav-link" data-view="governors">Guvernører</button>
+        <button type="button" class="nav-link" data-view="chicago">Chicago <span aria-hidden="true">↗</span></button>
+      </nav>
+      <button id="share" class="button button-outline share-button" type="button">Del visning <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow" id="hero-kicker">MIDTVEJSVALGET I USA</p>
+        <h1 id="page-title">Hvem får magten i Senatet?</h1>
+        <p class="hero-copy" id="hero-copy">Se partiernes mandatfordeling, hvilke sæder der er på valg, og kandidaterne i hver delstat.</p>
+      </div>
+      <div class="election-date" aria-label="Valgdag den 3. november 2026">
+        <span class="eyebrow">VALGDAG</span><span class="date-day">03<span>NOV</span></span><span class="date-year">TIRSDAG · 2026</span>
+      </div>
+    </section>
+
+    <div class="snapshot-line"><span class="status-dot" aria-hidden="true"></span><span>Valgguide · Oplysninger kontrolleret 31. oktober 2026</span><span class="snapshot-note">Ingen løbende valgresultater</span></div>
+
+    <section id="senate-view" aria-label="Interaktivt valgkort">
+      <section class="balance" aria-labelledby="balance-heading">
+        <div class="balance-top"><h2 id="balance-heading">Senatet før valget</h2><span id="balance-tag" class="small-tag">FORDELING PR. 31.10.2026</span></div>
+        <div class="balance-values">
+          <div class="balance-party"><span class="party-name"><i class="dot d"></i><span id="label-d">Demokrater + 2 uafhængige</span></span><strong id="count-d">47</strong></div>
+          <div class="balance-middle" id="unassigned-label"><strong>35</strong><span>sæder på valg</span></div>
+          <div class="balance-party balance-republican"><span class="party-name"><i class="dot r"></i>Republikanere</span><strong id="count-r">53</strong></div>
+        </div>
+        <div class="seat-bar-wrap"><div id="seat-bar" class="seat-bar" role="img" aria-label="47 i Demokraternes gruppe og 53 republikanere"></div><span class="seat-midline" id="seat-midline" aria-hidden="true"></span></div>
+        <div class="balance-foot"><span id="balance-description">Demokraternes gruppe omfatter 45 demokrater og 2 uafhængige.</span><button type="button" class="text-button" id="explain-majority">Hvor går grænsen?</button></div>
+        <div id="majority-explanation" class="explanation" hidden><strong>51 mandater giver flertal.</strong> Ved 50 mod 50 har den republikanske vicepræsident J.D. Vance den afgørende stemme. Derfor kan Republikanerne få kontrol med 50, mens Demokraternes gruppe skal nå 51. De to nuværende uafhængige, Angus King og Bernie Sanders, samarbejder med Demokraterne.</div>
+        <section id="senate-up-summary" class="seats-up-summary" aria-labelledby="senate-up-heading">
+          <h3 id="senate-up-heading">Senatssæder på valg</h3>
+          <div class="seats-up-counts">
+            <div class="seats-up-party d"><strong id="senate-up-d">13</strong><span>Demokraterne</span></div>
+            <div class="seats-up-party r"><strong id="senate-up-r">22</strong><span>Republikanerne</span></div>
+          </div>
+          <p id="senate-up-note">35 sæder i alt, inklusive suppleringsvalgene i Florida og Ohio. Tallene følger partiet, som har sædet før valget. De øvrige 65 sæder er ikke på valg.</p>
+          <a class="seats-up-source" href="https://www.dailypress.senate.gov/on-the-floor/senate-facts/" target="_blank" rel="noopener noreferrer">Kilde: Senatet ↗</a>
+        </section>
+      </section>
+
+      <div class="map-layout">
+        <section class="map-panel" aria-labelledby="map-title">
+          <div class="map-top"><div><p class="eyebrow" id="map-kicker">DE 50 DELSTATER</p><h2 id="map-title">Ét klik. Ét valg.</h2></div><button class="button button-outline chicago-shortcut" data-open-chicago type="button">Se Chicago <span aria-hidden="true">↗</span></button></div>
+          <p id="map-description" class="map-description">Farven viser, hvilket parti der har sædet på valg.</p>
+          <div id="house-map-toolbar" class="house-map-toolbar" hidden><button id="map-all-states" class="button button-outline" type="button">Hele USA</button><span id="house-map-location">Alle 435 distrikter</span><span class="map-zoom-hint">Klik et distrikt for at zoome ind</span></div>
+          <div class="map-stage"><svg id="us-map" aria-labelledby="map-access-title map-access-desc"><title id="map-access-title">USA's senatsvalg 2026</title><desc id="map-access-desc">Vælg en delstat for at se kandidater. Du kan også bruge listen under kortet.</desc></svg><div id="map-tooltip" class="map-tooltip" role="tooltip" hidden></div></div>
+          <div id="map-legend" class="map-legend"></div>
+          <div class="map-bottom"><label for="state-select">Vælg delstat</label><select id="state-select" aria-controls="state-detail"></select><span class="map-note" id="map-note">Alaska og Hawaii vises som indsatser.</span></div>
+          <div id="district-control" class="map-bottom district-control" hidden><label for="district-select">Vælg distrikt</label><select id="district-select" aria-controls="state-detail"></select></div>
+        </section>
+        <aside id="state-detail" class="state-detail" aria-label="Den valgte delstat"></aside>
+      </div>
+
+      <section class="explainer-row" id="election-explainers" aria-label="Kort om valget">
+        <article><span class="explainer-number">01</span><div><h3>To senatorer pr. delstat</h3><p>Alle delstater har to pladser, uanset indbyggertal. Derfor viser mandatbjælken magtbalancen bedre end staternes areal.</p></div></article>
+        <article><span class="explainer-number">02</span><div><h3>35 valg denne gang</h3><p>33 ordinære valg og to suppleringsvalg i Florida og Ohio. De øvrige 65 pladser er ikke på valg.</p></div></article>
+        <article><span class="explainer-number">03</span><div><h3>De to uafhængige</h3><p>De to nuværende uafhængige er med i Demokraternes gruppe. Deres sæder er ikke på valg i 2026.</p></div></article>
+      </section>
+    </section>
+
+    <section id="chicago-view" hidden aria-labelledby="chicago-heading">
+      <div class="chicago-intro"><div><p class="eyebrow">CHICAGO SOM LOKALT EKSEMPEL · ILLINOIS · COOK COUNTY</p><h2 id="chicago-heading">Valget varierer mellem delstater og valgkredse</h2><p>Amerikanerne stemmer om forskellige poster afhængigt af, hvor de bor. Til Repræsentanternes Hus har hver valgkreds sine egne kandidater, mens senatorer vælges på delstatsniveau.</p></div></div>
+      <div id="chicago-statewide" class="chicago-statewide"></div>
+      <section class="local-section"><div class="section-heading"><p class="eyebrow">FRA WASHINGTON TIL SKOLEBESTYRELSEN</p><h2>De øvrige valg</h2></div><div id="chicago-offices" class="office-grid"></div></section>
+      <section class="referendums-section"><div class="section-heading"><p class="eyebrow">SEKS FÆLLES SPØRGSMÅL</p><h2>Vejledende folkeafstemninger</h2><p>Et ja ændrer ikke i sig selv lovgivningen. Spørgsmålene her er korte danske resuméer. Lokale områder kan have flere spørgsmål.</p></div><div id="chicago-referendums" class="referendum-list"></div></section>
+      <div class="chicago-back"><button class="button button-dark" id="back-to-illinois" type="button">Til Illinois på kortet <span aria-hidden="true">↗</span></button></div>
+    </section>
+
+    <details class="sources-section" id="sources"><summary>Kilder, metode og afgrænsning <span aria-hidden="true">+</span></summary><div class="sources-content"><div><h3>Et fast øjebliksbillede</h3><p>Oplysningerne er kontrolleret den 31. oktober 2026. Denne version er en valgguide. Den henter ikke valgresultater eller meningsmålinger. Kandidatlisten til Repræsentanternes Hus er udgivet af House Clerk den 8. oktober 2026.</p><h3>Tre forskellige valg</h3><p><strong>Senatet:</strong> 35 sæder er på valg: 13 demokratiske og 22 republikanske, inklusive suppleringsvalgene i Florida og Ohio. Tallene følger det parti, som har sædet før valget, også når den siddende senator ikke genopstiller. De øvrige 65 sæder er ikke på valg. De to nuværende uafhængige indgår i Demokraternes gruppe. 51 giver mandatflertal; Republikanerne kan få kontrol ved 50 via vicepræsidenten.</p><p><strong>Repræsentanternes Hus:</strong> Alle 435 stemmeberettigede pladser er på valg. 218 pladser er et flertal i et fuldt hus. DC og territoriernes delegerede indgår ikke.</p><p><strong>Guvernører:</strong> 36 valg og 14 delstatsposter, som ikke er på valg. Optællingen viser partiernes guvernørposter i de 50 stater. Den giver ikke et fælles regeringsflertal. Territorier indgår ikke.</p><h3>Distriktsgrænser i 2026</h3><p id="geometry-method">Kortet følger de publicerede distriktsgrænser til 2026-valget. Farven i valgguiden viser det nuværende parti for samme distriktsnummer, ikke et tidligere resultat for præcis det viste område. Nogle distrikter har fået nye grænser.</p><h3>Indbyggertal</h3><p>Delstaternes indbyggertal er U.S. Census Bureaus skøn pr. 1. juli 2025. Det omfatter alle indbyggere, ikke kun stemmeberettigede. <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html" target="_blank" rel="noopener noreferrer">Se Census-kilden</a>.</p><h3>Optagelse i USA</h3><p>År og rækkefølge følger <a href="https://www.sos.arkansas.gov/education/arkansas-history/history-of-the-flag/order-of-states-admission" target="_blank" rel="noopener noreferrer">Arkansas Secretary of States oversigt</a>. For de første 13 stater er årstallet året, hvor de ratificerede USA's forfatning.</p><h3>Kandidatdækning</h3><p>Kandidatfelterne bygger på de anførte kilder. Dækning og eventuelle begrænsninger fremgår ved hvert valg. Write-in-kandidater er ikke medtaget. Kandidater vises efter parti og navn, ikke efter forventet opbakning.</p><h3>Deling af visningen</h3><p>Valgtype, delstat og eventuelt distrikt indgår i sidens URL, så samme visning kan åbnes igen. Deling ændrer ikke, hvem der har adgang til siden.</p></div><div><h3>Senatet</h3><ul id="national-sources" class="source-list"></ul><h3>Repræsentanternes Hus</h3><ul id="house-sources" class="source-list"></ul><h3>Guvernørerne</h3><ul id="governor-sources" class="source-list"></ul><h3>Chicago og Illinois</h3><ul id="chicago-sources" class="source-list"></ul><p class="source-small">Kilderne til det enkelte valg findes desuden ved kandidaterne.</p></div></div></details>
+    <footer><span>VALG USA 2026</span><p>Et dansk overblik over det amerikanske midtvejsvalg.</p><a href="#main">Til toppen ↑</a></footer>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="share-dialog"><div class="dialog-top"><h2>Del din visning</h2><button class="button button-plain" id="close-share" type="button" aria-label="Luk">✕</button></div><p>Kopiér linket for at gemme den valgte valgtype, delstat og eventuelt distrikt. Modtageren skal have adgang til siden.</p><label for="share-url">Link til visningen</label><input id="share-url" readonly><button id="select-share" class="button button-dark" type="button">Markér link</button></dialog>
+  <noscript><p class="noscript">Aktivér JavaScript for at se kortet og kandidaterne.</p></noscript>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a53a3370ac9ba1fb',t:'MTc5MzUyODc4Mw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a53a3370ac9ba1fb',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
