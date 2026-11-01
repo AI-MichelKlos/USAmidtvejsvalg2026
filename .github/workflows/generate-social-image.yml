@@ -1,0 +1,45 @@
+name: Generate LinkedIn preview image
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/social-preview.svg'
+      - '.github/workflows/generate-social-image.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: social-image-generation
+  cancel-in-progress: false
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Render 1200 by 630 PNG
+        run: |
+          python3 -m pip install --quiet cairosvg
+          python3 - <<'PY'
+          import cairosvg
+          import struct
+          from pathlib import Path
+          inp=Path('assets/social-preview.svg')
+          out=Path('assets/social-preview.png')
+          cairosvg.svg2png(url=str(inp), write_to=str(out), output_width=1200, output_height=630)
+          raw=out.read_bytes()
+          assert raw[:8]==bytes.fromhex('89504e470d0a1a0a')
+          width,height=struct.unpack('>II',raw[16:24])
+          assert (width,height)==(1200,630)
+          print('Generated',out,'size',len(raw),'dimensions',width,height)
+          PY
+      - name: Commit social sharing image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/social-preview.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Add 1200x630 LinkedIn PNG preview"
+            git push
+          fi
