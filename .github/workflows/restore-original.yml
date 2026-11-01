@@ -1,0 +1,32 @@
+name: Restore original ChatGPT Sites publication
+on:
+  push:
+    paths:
+      - '.github/workflows/restore-original.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Preserve previous reconstruction
+        run: |
+          mkdir -p archive
+          if [ ! -f archive/reconstructed-2026-11-01.html ]; then
+            cp index.html archive/reconstructed-2026-11-01.html
+          fi
+      - name: Download and verify original site files
+        run: python3 scripts/restore_original.py
+      - name: Commit original site files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html assets archive scripts
+          if ! git diff --staged --quiet; then
+            git commit -m 'Restore original full election site including profiles and maps'
+            git push
+          fi
