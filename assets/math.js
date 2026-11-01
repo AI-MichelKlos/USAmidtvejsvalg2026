@@ -57,7 +57,7 @@
     const p=new URL(href,'https://example.invalid/').searchParams;
     const states=new Set(data.states.map(s=>s.abbr));
     const kinds=['senate','house','governors'];
-    const view=[...kinds,'chicago'].includes(p.get('view'))?p.get('view'):'senate';
+    const view=kinds.includes(p.get('view'))?p.get('view'):'senate';
     const selected=states.has(p.get('state'))?p.get('state'):'IL';
     const result={view,mode:p.get('mode')==='scenario'?'scenario':'guide',selected,district:'',area:states.has(p.get('area'))&&p.get('area')===selected?p.get('area'):'US',selections:{senate:{},house:{},governors:{}}};
     const notices=[];

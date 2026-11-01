@@ -85,8 +85,8 @@
     const boundary=k==='house'&&race.redistricted?'<span class="boundary-note">Distriktets grænser er ændret til 2026. Medlemsoplysningerne følger det nuværende distriktsnummer.</span>':'';
     const candidates=race.candidates.map(c=>`<div class="candidate-row">${candidateContent(c)}</div>`).join('');
     const note=(race.note||'').replace(/; en scenarievælger[^.]*\./g,'.').trim();
-    $('state-detail').innerHTML=`${header}<p class="incumbent">${current}${boundary}</p><p class="candidate-heading">Kandidater</p><div class="candidate-list">${candidates}</div><p class="candidate-scope">${esc(race.candidateScope)}</p>${note?`<p class="candidate-scope">${esc(note)}</p>`:''}${race.abbr==='IL'?'<button type="button" class="text-button state-chicago-link" data-open-chicago>Hvad stemmer Chicago ellers om? ↗</button>':''}<div class="state-source-links">${(race.sources||[]).map(s=>sourceLink(s)).join('')}</div>${demographicsPanel(state.selected)}`;
-    $('state-detail').querySelectorAll('[data-open-chicago]').forEach(b=>b.addEventListener('click',()=>setView('chicago')));
+    $('state-detail').innerHTML=`${header}<p class="incumbent">${current}${boundary}</p><p class="candidate-heading">Kandidater</p><div class="candidate-list">${candidates}</div><p class="candidate-scope">${esc(race.candidateScope)}</p>${note?`<p class="candidate-scope">${esc(note)}</p>`:''}<div class="state-source-links">${(race.sources||[]).map(s=>sourceLink(s)).join('')}</div>${demographicsPanel(state.selected)}`;
+    
   }
   function renderSelectors(){
     const k=kind(),sorted=[...data.states].sort((a,b)=>a.name.localeCompare(b.name,'da'));
@@ -157,12 +157,7 @@
     const notes=k==='senate'?[['To senatorer pr. delstat','Alle delstater har to pladser, uanset indbyggertal. Mandatbjælken viser magtbalancen uden at give store landområder ekstra vægt.'],['35 valg denne gang','33 ordinære valg og to suppleringsvalg i Florida og Ohio. De øvrige 65 pladser er ikke på valg.'],['De to uafhængige','De to nuværende uafhængige er med i Demokraternes gruppe. Deres sæder er ikke på valg i 2026.']]:k==='house'?[['435 distrikter, 435 pladser','Alle stemmeberettigede pladser er på valg. Et fuldt hus kræver 218 mandater til flertal. DC og territorier indgår ikke.'],['Zoom ind i delstaten','Klik et distrikt eller vælg en delstat. Brug distriktslisten til de små byområder, som er svære at ramme på landkortet.'],['Grænserne er til 2026','Flere distrikter er ændret. Nuværende medlemmer og farver følger distriktsnummeret, ikke nødvendigvis samme vælgerområde.']]:[['36 delstater vælger','Guvernøren leder delstatens administration. I denne opgørelse indgår kun de 50 delstater, ikke territorier.'],['14 poster er ikke på valg','6 demokratiske og 8 republikanske guvernørposter er ikke på valg. De indgår i den nuværende fordeling.'],['Ingen fælles flertalsgrænse','Fordelingen viser, hvor mange delstater hvert parti leder. Den giver ikke magten over en samlet regering.']];
     $('election-explainers').innerHTML=notes.map(([title,text],i)=>`<article><span class="explainer-number">0${i+1}</span><div><h3>${title}</h3><p>${text}</p></div></article>`).join('');
   }
-  function renderChicago(){
-    const c=data.chicago,sourceById=Object.fromEntries(c.sources.map(s=>[s.id,s]));
-    $('chicago-statewide').innerHTML=c.statewideRaces.map(r=>`<article class="chicago-race"><h3>${esc(r.title)}</h3><p>${esc(r.description)}</p><div class="candidate-list">${r.candidates.map(k=>`<div class="candidate-row">${candidateContent(k)}</div>`).join('')}</div><p class="candidate-scope">${esc(r.candidateScope)}</p><div class="state-source-links">${r.sourceIds.filter(id=>sourceById[id]).slice(0,1).map(id=>sourceLink(sourceById[id])).join('')}</div></article>`).join('');
-    $('chicago-offices').innerHTML=c.otherBallotSections.map(s=>`<article class="office-item"><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p></article>`).join('');
-    $('chicago-referendums').innerHTML=c.referendums.map((r,i)=>`<article class="referendum"><span class="referendum-number">${String(i+1).padStart(2,'0')}</span><div><p class="jurisdiction">${esc(r.jurisdictionDa)}</p><h3>${esc(r.title)}</h3><p>${esc(r.summary)}</p>${r.sourceIds.filter(id=>sourceById[id]).slice(0,1).map(id=>sourceLink(sourceById[id],'Læs kilden')).join('')}</div></article>`).join('');
-    $('chicago-sources').innerHTML=c.sources.filter(s=>s.id!=='cook-results').map(s=>`<li>${sourceLink(s)}</li>`).join('');
+  function renderSources(){
     $('national-sources').innerHTML=data.baseline.sources.filter(s=>['party','daily-press','race-count','tie','oh-special','fl-ballot'].includes(s.id)).map(s=>`<li>${sourceLink(s)}</li>`).join('')+`<li>${sourceLink({label:'US Atlas: publicerede delstatsgrænser',url:data.baseline.geometry.sourceProjectUrl})}</li>`;
     const unique=list=>[...new Map(list.filter(s=>s.url&&s.label).map(s=>[s.url,s])).values()];
     $('house-sources').innerHTML=unique([...(data.elections.house.sources||[]),...data.houseGeometry.sources.filter(s=>['census-guidance','census-120','census-119-mo'].includes(s.id))]).map(s=>`<li>${sourceLink(s)}</li>`).join('');
@@ -171,7 +166,7 @@
   }
   function render(){
     const chicago=state.view==='chicago',k=kind();
-    $('senate-view').hidden=chicago;$('chicago-view').hidden=!chicago;
+    $('senate-view').hidden=false;
     document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===state.view;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
     $('page-title').textContent=chicago?'Én by. Mange valg.':copy[k].title;
     $('hero-kicker').textContent=chicago?'MIDTVEJSVALGET I USA · CHICAGO':copy[k].kicker;
@@ -181,14 +176,14 @@
   }
   $('state-select').addEventListener('change',e=>selectState(e.target.value,false));$('district-select').addEventListener('change',e=>selectDistrict(e.target.value,false));
   document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
-  document.querySelectorAll('[data-open-chicago]').forEach(b=>b.addEventListener('click',()=>setView('chicago')));
+  
   document.querySelector('.brand').addEventListener('click',e=>{e.preventDefault();setView('senate');});
-  $('back-to-illinois').addEventListener('click',()=>{state.selected='IL';setView('senate');});
+  
   $('map-all-states').addEventListener('click',()=>{state.area='US';renderMapHeading();drawMap();saveUrl();});
   $('explain-majority').setAttribute('aria-expanded','false');$('explain-majority').setAttribute('aria-controls','majority-explanation');$('explain-majority').addEventListener('click',()=>{const open=$('majority-explanation').hidden;$('majority-explanation').hidden=!open;$('explain-majority').setAttribute('aria-expanded',open);});
   $('share').addEventListener('click',async()=>{saveUrl();try{if(!navigator.clipboard)throw new Error('No clipboard');await navigator.clipboard.writeText(location.href);showToast('Link til den valgte visning er kopieret.');}catch(e){$('share-url').value=location.href;$('share-dialog').showModal();$('share-url').focus();$('share-url').select();}});
   $('close-share').addEventListener('click',()=>{$('share-dialog').close();});$('select-share').addEventListener('click',()=>{$('share-url').focus();$('share-url').select();});
   $('share-dialog').addEventListener('click',e=>{if(e.target===$('share-dialog')){const r=$('share-dialog').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('share-dialog').close();}});
   window.addEventListener('popstate',()=>{readUrl();render();saveUrl();});
-  readUrl();renderChicago();render();saveUrl();new ResizeObserver(()=>drawMap()).observe($('us-map').parentElement);
+  readUrl();renderSources();render();saveUrl();new ResizeObserver(()=>drawMap()).observe($('us-map').parentElement);
 })();
