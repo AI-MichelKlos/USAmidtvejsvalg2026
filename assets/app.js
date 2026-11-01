@@ -72,7 +72,7 @@
     const selected=stateByAbbr[abbr],d=selected.demographics;
     const percent=n=>`${new Intl.NumberFormat('da-DK',{minimumFractionDigits:1,maximumFractionDigits:1}).format(n)} %`;
     const rows=[['Født i udlandet',percent(d.foreignBornPct)],['Hispanic/Latino',percent(d.hispanicPct)],['65 år eller ældre',percent(d.age65Pct)],['Bachelorgrad eller højere (25+)',percent(d.bachelorPlusPct)],['Median husstandsindkomst',`${new Intl.NumberFormat('da-DK').format(d.medianHouseholdIncome)} $`]];
-    return `<details class="state-demographics"><summary>Kort om delstaten</summary><dl>${rows.map(([label,value])=>`<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><p>U.S. Census Bureau, ACS 2020–2024. Indkomst i 2024-dollar. Hispanic/Latino er etnicitet, ikke en racekategori.</p><a href="https://data.census.gov/profile?g=040XX00US${esc(selected.fips)}" target="_blank" rel="noopener noreferrer">Se flere tal hos Census ↗</a></details>`;
+    return `<details class="state-demographics" open><summary>Kort om delstaten</summary><dl>${rows.map(([label,value])=>`<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl><p>U.S. Census Bureau, ACS 2020–2024. Indkomst i 2024-dollar. Hispanic/Latino er etnicitet, ikke en racekategori.</p><a href="https://data.census.gov/profile?g=040XX00US${esc(selected.fips)}" target="_blank" rel="noopener noreferrer">Se flere tal hos Census ↗</a></details>`;
   }
   function renderDetail(){
     const k=kind(),race=activeRace(),name=stName(state.selected);
